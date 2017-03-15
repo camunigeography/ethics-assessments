@@ -27,7 +27,42 @@ class ethicsAssessments extends reviewableAssessments
 	# Database structure
 	public function databaseStructureSpecificFields ()
 	{
-		return parent::databaseStructureSpecificFields ();
+		# Return the SQL
+		return $sql = "
+			  /* Domain-specific fields to be added here, if any */
+			  
+			  `funder` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Funder',
+			  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Project title',
+			  `topic` text COLLATE utf8_unicode_ci COMMENT 'Summary of topic',
+			  `guidance` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Read guidance',
+			  `methods` text COLLATE utf8_unicode_ci COMMENT 'Fieldwork methods',
+			  `socialMedia` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Social media',
+			  `socialMediaDetails` text COLLATE utf8_unicode_ci COMMENT 'Social media - details',
+			  `harm` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Harmful/intrusive',
+			  `harmDetails` text COLLATE utf8_unicode_ci COMMENT 'Harmful/intrusive - details',
+			  `gatekeeper` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Gatekeeper',
+			  `gatekeeperDetails` text COLLATE utf8_unicode_ci COMMENT 'Gatekeeper - details',
+			  `organisations` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Organisations',
+			  `organisationsDetails` text COLLATE utf8_unicode_ci COMMENT 'Organisations - details',
+			  `vulnerable` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Vulnerable participants',
+			  `vulnerableDetails` text COLLATE utf8_unicode_ci COMMENT 'Vulnerable participants - details',
+			  `sensitiveTopics` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Sensitive topics',
+			  `sensitiveTopicsDetails` text COLLATE utf8_unicode_ci COMMENT 'Sensitive topics - details',
+			  `humanParticipants` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Human participants',
+			  `humanParticipantsDetails` text COLLATE utf8_unicode_ci COMMENT 'Human participants - details',
+			  `humanData` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Data from humans',
+			  `humanDataDetails` text COLLATE utf8_unicode_ci COMMENT 'Data from humans - details',
+			  `covert` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Covert research',
+			  `covertDetails` text COLLATE utf8_unicode_ci COMMENT 'Covert research - details',
+			  `inducements` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Inducements',
+			  `inducementsDetails` text COLLATE utf8_unicode_ci COMMENT 'Inducements - details',
+			  `assistants` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Assistants',
+			  `assistantsDetails` text COLLATE utf8_unicode_ci COMMENT 'Assistants - details',
+			  `abroad` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Abroad',
+			  `abroadDetails` text COLLATE utf8_unicode_ci COMMENT 'Abroad - details',
+			  `dataProtection` text COLLATE utf8_unicode_ci COMMENT 'Data protection',
+			  `stage2InfoRequired` int(1) DEFAULT NULL COMMENT 'Stage 2 information required',
+		";
 	}
 	
 	
