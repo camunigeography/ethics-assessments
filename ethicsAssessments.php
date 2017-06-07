@@ -68,6 +68,20 @@ class ethicsAssessments extends reviewableAssessments
 	}
 	
 	
+	# Define private data fields
+	public function privateDataFields ()
+	{
+		# Define the local private data fields
+		$localFields = array ('funder', );
+		
+		# Combine with base fields
+		$fields = array_merge (parent::privateDataFields (), $localFields);
+		
+		# Return the list
+		return $fields;
+	}
+	
+	
 	# Submission form
 	public function submissionForm ($data)
 	{
