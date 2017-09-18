@@ -35,7 +35,7 @@ class ethicsAssessments extends reviewableAssessments
 			  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Project title',
 			  `topic` text COLLATE utf8_unicode_ci COMMENT 'Summary of topic',
 			  `guidance` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Read guidance',
-			  `methods` text COLLATE utf8_unicode_ci COMMENT 'Fieldwork methods',
+			  `methods` text COLLATE utf8_unicode_ci COMMENT 'Data collection methods',
 			  `conflicts` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Conflicts of interest',
 			  `conflictsDetails` text COLLATE utf8_unicode_ci COMMENT 'Conflicts of interest - details',
 			  `socialMedia` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Social media',
@@ -119,7 +119,7 @@ class ethicsAssessments extends reviewableAssessments
 					<td>{guidance}</td>
 				</tr>
 				<tr>
-					<td>9. List all fieldwork methods that you intend to use (e.g. interviews, water sampling, archival work)</td>
+					<td>9. List all data collection methods that you intend to use (e.g. interviews, water sampling, archival work)</td>
 					<td>{methods}</td>
 				</tr>
 				<tr>
