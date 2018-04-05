@@ -29,7 +29,7 @@ class ethicsAssessments extends reviewableAssessments
 	{
 		# Return the SQL
 		return $sql = "
-			  /* Domain-specific fields to be added here, if any */
+			  /* Domain-specific fields */
 			  
 			  `funder` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Funder',
 			  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Project title',
@@ -214,7 +214,7 @@ class ethicsAssessments extends reviewableAssessments
 					</td>
 				</tr>
 				<tr>
-					<td>23. Please describe how you will ensure that you comply with the Data Protection Act.</td>
+					<td>23. Please describe how you will ensure that you comply with the General Data Protection Regulation (GDPR). [<a href="/research/ethics/dataprotection.html" target="_blank" title="[Link opens in a new window]">More info</a>]</td>
 					<td>{dataProtection}</td>
 				</tr>
 			</tbody>
