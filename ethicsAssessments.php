@@ -60,6 +60,8 @@ class ethicsAssessments extends reviewableAssessments
 			  `inducementsDetails` text COLLATE utf8_unicode_ci COMMENT 'Inducements - details',
 			  `assistants` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Assistants',
 			  `assistantsDetails` text COLLATE utf8_unicode_ci COMMENT 'Assistants - details',
+			  `distress` ENUM('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Distress',
+			  `distressDetails` TEXT COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Distress - details',
 			  `abroad` enum('','Yes','No') COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Abroad',
 			  `abroadDetails` text COLLATE utf8_unicode_ci COMMENT 'Abroad - details',
 			  `dataProtection` text COLLATE utf8_unicode_ci COMMENT 'Data protection',
@@ -207,14 +209,21 @@ class ethicsAssessments extends reviewableAssessments
 					</td>
 				</tr>
 				<tr>
-					<td>22. Do you plan to undertake research outside the UK? If YES, describe any existing links with the country and explain how you intend to manage local cultural and political sensitivities. Please show how you intend to comply with any legal requirements for conducting research in that country.</td>
+					<td>22. Could your research cause psychological and/or emotional distress to you, the researcher (e.g. due to the topic, group of respondents, methods, location, duration)? If YES, please provide details of the strategies you will employ to limit the potential harm to yourself.</td>
+					<td>
+						{distress}<br />
+						{distressDetails}
+					</td>
+				</tr>
+				<tr>
+					<td>23. Do you plan to undertake research outside the UK? If YES, describe any existing links with the country and explain how you intend to manage local cultural and political sensitivities. Please show how you intend to comply with any legal requirements for conducting research in that country.</td>
 					<td>
 						{abroad}<br />
 						{abroadDetails}
 					</td>
 				</tr>
 				<tr>
-					<td>23. Please describe how you will ensure that you comply with the General Data Protection Regulation (GDPR). [<a href="/research/ethics/dataprotection.html" target="_blank" title="[Link opens in a new window]">More info</a>]</td>
+					<td>24. Please describe how you will ensure that you comply with the General Data Protection Regulation (GDPR). [<a href="/research/ethics/dataprotection.html" target="_blank" title="[Link opens in a new window]">More info</a>]</td>
 					<td>{dataProtection}</td>
 				</tr>
 			</tbody>
