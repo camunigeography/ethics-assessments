@@ -84,13 +84,6 @@ class ethicsAssessments extends reviewableAssessments
 	}
 	
 	
-	# Submission form
-	public function submissionForm ($data)
-	{
-		return parent::submissionForm ($data);
-	}
-	
-	
 	# Function to define the asssessment form template
 	public function formTemplateLocal ($data, $watermark)
 	{
