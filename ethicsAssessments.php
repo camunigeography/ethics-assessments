@@ -40,7 +40,7 @@ class ethicsAssessments extends reviewableAssessments
 	
 	
 	# Function to define the asssessment form template
-	public function formTemplateLocal ($data, $watermark)
+	public function form_default ($data, $watermark)
 	{
 		$html = '<h3>Section B &#8211; Questionnaire</h3>';
 		$html .= $watermark;
