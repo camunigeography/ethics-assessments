@@ -65,6 +65,10 @@ class ethicsAssessments extends reviewableAssessments
 					<td>{topic|mediumtext|Summary of topic}</td>
 				</tr>
 				<tr>
+					<td>What is the estimated period (beginning/end dates) during which the fieldwork to which this assessment applies will be conducted?</td>
+					<td>{dates|varchar(255)|Dates}</td>
+				</tr>
+				<tr>
 					<td>8. Have you read and understood the &quot;Research ethics: Guiding principles&quot; and &quot;project ethics&quot; sections on the intranet?</td>
 					<td>{guidance|enum('','Yes','No')|Read guidance}</td>
 				</tr>
