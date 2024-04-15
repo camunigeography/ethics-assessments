@@ -1,7 +1,6 @@
 <?php
 
 # Class implementing a research ethics assessment system
-require_once ('reviewable-assessments/reviewableAssessments.php');
 class ethicsAssessments extends reviewableAssessments
 {
 	# Function to assign defaults additional to the general application defaults
