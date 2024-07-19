@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64de6b5240629d6c5aec026958325586",
+    "content-hash": "2e7c302b05971261e351a36ec29c529b",
     "packages": [
         {
             "name": "camunigeography/camunidata",
@@ -44,16 +44,16 @@
         },
         {
             "name": "camunigeography/reviewable-assessments",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/camunigeography/reviewable-assessments.git",
-                "reference": "a7def218efb065d89008655734faf2613b4ee3d5"
+                "reference": "c031660220f2be5129b71109bc343c0ec45259ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/camunigeography/reviewable-assessments/zipball/a7def218efb065d89008655734faf2613b4ee3d5",
-                "reference": "a7def218efb065d89008655734faf2613b4ee3d5",
+                "url": "https://api.github.com/repos/camunigeography/reviewable-assessments/zipball/c031660220f2be5129b71109bc343c0ec45259ea",
+                "reference": "c031660220f2be5129b71109bc343c0ec45259ea",
                 "shasum": ""
             },
             "require": {
@@ -76,9 +76,9 @@
             "description": "Reviewable assessments system (base application library)",
             "support": {
                 "issues": "https://github.com/camunigeography/reviewable-assessments/issues",
-                "source": "https://github.com/camunigeography/reviewable-assessments/tree/v1.0.1"
+                "source": "https://github.com/camunigeography/reviewable-assessments/tree/v1.0.2"
             },
-            "time": "2024-07-05T13:45:29+00:00"
+            "time": "2024-07-19T13:53:40+00:00"
         },
         {
             "name": "libpurecontent/application",
